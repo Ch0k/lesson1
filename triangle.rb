@@ -4,9 +4,9 @@
 высоту треугольника и возвращать его площадь.    
 =end
 
-puts "Введите основание"
-a = gets.chomp
-puts "Введите высоту"
-h =  gets.chomp
-s = 0.5 * a.to_i * h.to_i
+puts 'Введите основание'
+a = gets.chomp.to_i
+puts 'Введите высоту'
+h =  gets.chomp.to_i
+s = 0.5 * a * h
 puts "Площадь треугольника равна #{s}"

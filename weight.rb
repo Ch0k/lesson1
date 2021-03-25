@@ -6,14 +6,13 @@
     
 =end
 
-
-puts "Как вас зовут?"
+puts 'Как вас зовут?'
 name = gets.chomp
-puts "Какой у вас рост?"
-height = gets.chomp
-answer = (height.to_i - 110) * 1.15
+puts 'Какой у вас рост?'
+height = gets.chomp.to_i
+answer = (height - 110) * 1.15
 if answer > 0 
-    puts "#{name}, Ваш идеальный вес #{answer}" 
+  puts "#{name}, Ваш идеальный вес #{answer}" 
 else
-    puts "#{name}, Ваш вес уже оптимальный"
+  puts "#{name}, Ваш вес уже оптимальный"
 end
